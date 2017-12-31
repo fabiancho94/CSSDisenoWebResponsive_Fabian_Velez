@@ -1,65 +1,70 @@
 body
 {
-  background-color:  #02010a;
+  background:  #02010a;
   font-family: 'Dancing Script';
+  color: white;
 }
 
 header
 {
   background: #5b7989;
-  color: white;
   border-radius: 10px 10px 0px 0px;
   margin: 0;
 	padding: 0;
 	width: 100%;
 }
-header h1
-{
-  text-align: left;
+footer {
+  background: #C6d5c5;
+  color: black;
+  border-radius: 0px 0px 10px 10px;
+	margin:0px;
+	padding-top: 10px;
+}
+#contenedor{
+  display: flex;
+  flex-flow: row wrap;
 }
 
-#contenido
+#contenedor h2{
+  text-align: center;
+}
+
+.columna1, .columna2, .columna3, .columna4
 {
-  margin: 0;
-	padding: 0;
-	width: 100%;
+  text-align: justify;
+  width: 25%;
+}
+
+img{
+  display: block;
+  margin: auto;
 }
 #contenido div {
 	box-sizing: border-box;
 	min-width: 150px;
 	padding: 20px;
 }
-.imgPrincipal
-{
-  color: black;
-  background: yellow;
-}
-.imgSecundaria
-{
-  color: white;
-  background: blue;
+
+.imgPrincipal{
+  background: #82c3a6;
 }
 
-#contenido {
-	display: flex;
-	flex-flow: row wrap;
-}
-/*Para versiones mobiles*/
-
-.imgPrincipal, .imgSecundaria
-{
-  width: 100%;
+.imgPrincipal img{
+  width: 80%;
 }
 
-/*Para version Desktop*/
+.imagen1, .imagen2{
+  background: #d5c75f;
+  width: 50%;
+}
+.imagen1 img{
+width: 80%;
+}
+.imagen2 img{
+width: 80%;
+}
 
-@media (min-width: 600px) {
-.imgPrincipal
-{
-  width: 100%;
-}
-.imgSecundaria
-{
-  width: 100%;
-}
+#contenido{
+  display: flex;
+  flex-flow: row wrap;
 }
