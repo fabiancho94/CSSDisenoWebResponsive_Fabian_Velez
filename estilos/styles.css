@@ -12,6 +12,19 @@ header
   margin: 0px;
 	padding: 0px;
 	width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+header h1{
+  width: 80%;
+
+}
+#menu{
+  margin: auto;
+  text-decoration: none;
 }
 footer {
   background: #C6d5c5;
@@ -67,4 +80,10 @@ width: 80%;
 #contenido{
   display: flex;
   flex-flow: row wrap;
+}
+@media (max-width: 600px) {
+  header h1{
+    width: 100%;
+    text-align: center;
+  }
 }
