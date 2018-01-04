@@ -44,8 +44,11 @@ footer {
 
 .columna1, .columna2, .columna3, .columna4
 {
+  
+  padding-left: 2%;
+  padding-right: 2%;
   text-align: justify;
-  width: 25%;
+  width: 20%;
 }
 
 img{
@@ -76,14 +79,33 @@ width: 80%;
 .imagen2 img{
 width: 80%;
 }
-
 #contenido{
   display: flex;
   flex-flow: row wrap;
+}
+
+[class*='retrato']{
+  width: 33%;
+}
+[class*='retrato']>img{
+  width: 100%;
 }
 @media (max-width: 600px) {
   header h1{
     width: 100%;
     text-align: center;
+  }
+  [class*='retrato']{
+    width: 100%;
+  }
+  [class*='retrato']>img{
+    width: 50%;
+  }
+  [class*='columna']
+  {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 5%;
+    margin: 2%;
   }
 }
