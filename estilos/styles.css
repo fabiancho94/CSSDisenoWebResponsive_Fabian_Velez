@@ -1,3 +1,4 @@
+/* Estilos Iniciales */
 body
 {
   background:  #02010a;
@@ -15,6 +16,7 @@ header
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
+  animation: SlideIn 1s;
 
 }
 
@@ -46,6 +48,9 @@ footer {
   border-radius: 0px 0px 10px 10px;
 	margin:0px;
 	padding-top: 10px;
+}
+footer ul li{
+  margin: auto;
 }
 #contenedor{
   display: flex;
@@ -105,8 +110,53 @@ width: 90%;
 }
 [class*='retrato']>img{
   width: 100%;
-
 }
+/* Animacion Header */
+
+@keyframes SlideIn {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+/* ANIMACIONES INDEX.HTML */
+
+img[src*='imagen2']{
+  transition: all 1s ease;
+}
+img[src*='imagen2']:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
+}
+img[src*='imagen3']{
+  transition: all 1s ease;
+}
+img[src*='imagen3']:hover{
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
+}
+
+/* Filtros Paisajes y retratos */
+
+.retrato1{
+  filter: blur(10px);
+}
+.retrato3{
+  filter: sepia(90%);
+}
+.retrato2, .retrato4, .retrato6{
+  filter: grayscale(100%);
+}
+
+/* Responsive part */
 @media (max-width: 600px) {
   header h1{
     width: 100%;
@@ -135,23 +185,4 @@ width: 90%;
     padding-right: 5%;
     margin: 2%;
   }
-}
-
-/* ANIMACIONES INDEX.HTML */
-
-img[src*='imagen2']{
-  transition: all 1s ease;
-}
-img[src*='imagen2']:hover{
-  transform: rotate(10deg);
-  box-shadow: 2px 2px 2px #82c3a6;
-  border: 2px;
-}
-img[src*='imagen3']{
-  transition: all 1s ease;
-}
-img[src*='imagen3']:hover{
-  transform: translate(20px, -5px);
-  box-shadow: 2px 2px 2px #82c3a6;
-  border: 2px;
 }
