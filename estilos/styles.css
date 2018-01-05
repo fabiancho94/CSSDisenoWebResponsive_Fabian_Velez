@@ -30,6 +30,7 @@ header h1{
   color: white;
   font-weight: bold;
 }
+/* Parte de los estilos del menu*/
 .inicio{
   text-decoration: none;
 }
@@ -67,6 +68,7 @@ footer {
 img{
   display: block;
   margin: auto;
+  box-shadow: 2px 2px 2px #02010a;
 }
 #contenido div {
 	box-sizing: border-box;
@@ -85,12 +87,13 @@ img{
 .imagen1, .imagen2{
   background: #d5c75f;
   width: 50%;
+  border: 1px;
 }
 .imagen1 img{
 width: 80%;
 }
 .imagen2 img{
-width: 80%;
+width: 90%;
 }
 #contenido{
   display: flex;
@@ -132,4 +135,23 @@ width: 80%;
     padding-right: 5%;
     margin: 2%;
   }
+}
+
+/* ANIMACIONES INDEX.HTML */
+
+img[src*='imagen2']{
+  transition: all 1s ease;
+}
+img[src*='imagen2']:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
+}
+img[src*='imagen3']{
+  transition: all 1s ease;
+}
+img[src*='imagen3']:hover{
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px;
 }
